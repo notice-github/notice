@@ -11,7 +11,6 @@
 		"linux"
 	],
 	"scripts": {
-		"setup": "$SHELL ./scripts/setup.sh",
 		"docker:up": "docker-compose up -d",
 		"docker:down": "docker-compose down",
 		"dev": "turbo run dev --concurrency 42",

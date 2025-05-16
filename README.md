@@ -30,18 +30,15 @@ Notice uses [Doppler](https://doppler.com) to manage environment variables. You 
     ```sh
     pnpm install
     ```
-2.  **Run Setup Script:**
-    ```sh
-    pnpm run setup
-    ```
-3.  **Start Docker Containers:**
+2.  **Start Docker Containers:**
     ```sh
     pnpm run docker:up
     ```
-4.  **Start Development Server:**
+3.  **Start Development Server:**
     ```sh
     pnpm run dev
     ```
+
     Access your instance, typically at `http://localhost:3000` (confirm port if different).
 
 ## 🛑 Troubleshooting
