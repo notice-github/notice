@@ -1,0 +1,233 @@
+import { ReactNode } from 'react'
+import { getT } from '../internationalisation'
+
+type SubscriptionPlans = {
+	id: string
+	yearly: boolean
+	title: string
+	price?: ReactNode
+	yearlyPrice?: string
+	description: ReactNode
+	isSelected: boolean
+}
+
+export const SUBSCRIPTION_PLANS: SubscriptionPlans[] = [
+	// {
+	// 	id: 'free',
+	// 	yearly: false,
+	// 	title: 'Free',
+	// 	price: '0',
+	// 	description: 'Start playing around with Notice for free',
+	// 	isSelected: false,
+	// },
+	{
+		id: 'individual',
+		yearly: true,
+		title: 'Individual',
+		description: getT("Customize your new content's home", 'customizeYourNewContentsHome'),
+		price: '23',
+		yearlyPrice: '19',
+		isSelected: true,
+	},
+	{
+		id: 'essential',
+		yearly: true,
+		title: 'Essential',
+		description: getT('Manage smart content for your company', 'manageSmartContentForYourCompany'),
+		price: '59',
+		yearlyPrice: '49',
+		isSelected: true,
+	},
+	{
+		id: 'teams',
+		yearly: true,
+		title: 'Team',
+		description: getT('Activate content synergies for your team', 'activateContentSynergiesForYourTeam'),
+		price: '239',
+		yearlyPrice: '199',
+		isSelected: true,
+	},
+	{
+		id: 'enterprise',
+		yearly: false,
+		title: 'Enterprise',
+		description: getT('For those needing an enterprise-grade solution', 'forThoseNeedingAnEnterpriseGradeSolution'),
+		price: getT("Let's talk", `letsTalk`),
+		isSelected: true,
+	},
+]
+
+export type SubscriptionDetailValue = string | number | boolean | null | ReactNode
+
+interface SubscriptionDetail {
+	id: number
+	[x: string]: SubscriptionDetailValue
+}
+
+export const SUBSCRIPTION_DETAILS: Array<SubscriptionDetail> = [
+	{
+		id: 1,
+		feature: getT('Number of projects', 'numberOfProjects'),
+		forFree: 1,
+		forIndividual: 5,
+		forEssential: 10,
+		forTeams: 25,
+		forEnterprise: 'Custom',
+		forT1: 10,
+		forT2: 'Unlimited',
+	},
+	{
+		id: 2,
+		feature: getT('Number of collaborators', 'numberOfCollaborators'),
+		forFree: 0,
+		forIndividual: 0,
+		forEssential: 3,
+		forTeams: 10,
+		forEnterprise: 'Custom',
+		forT1: 2,
+		forT2: 'Unlimited',
+	},
+	{
+		id: 3,
+		feature: getT('Number of workspaces', 'numberOfWorkspaces'),
+		forFree: 1,
+		forIndividual: 1,
+		forEssential: 1,
+		forTeams: 1,
+		forEnterprise: 'Custom',
+		forT1: 1,
+		forT2: 'Unlimited',
+	},
+	{
+		id: 4,
+		feature: getT('Integrate everywhere', 'integrateAnywhere'),
+		forFree: true,
+		forIndividual: true,
+		forEssential: true,
+		forTeams: true,
+		forEnterprise: true,
+		forT1: true,
+		forT2: true,
+	},
+	{
+		id: 5,
+		feature: getT('Customization', 'customization'),
+		forFree: false,
+		forIndividual: true,
+		forEssential: true,
+		forTeams: true,
+		forEnterprise: true,
+		forT1: true,
+		forT2: true,
+	},
+	{
+		id: 6,
+		feature: getT('Translation', 'translation'),
+		forFree: false,
+		forIndividual: true,
+		forEssential: true,
+		forTeams: true,
+		forEnterprise: true,
+		forT1: true,
+		forT2: true,
+	},
+	{
+		id: 7,
+		feature: getT('Insights', 'insights'),
+		forFree: false,
+		forIndividual: true,
+		forEssential: true,
+		forTeams: true,
+		forEnterprise: true,
+		forT1: true,
+		forT2: true,
+	},
+	{
+		id: 8,
+		feature: getT('Remove Notice branding', 'removeNoticeBranding'),
+		forFree: false,
+		forIndividual: true,
+		forEssential: true,
+		forTeams: true,
+		forEnterprise: true,
+		forT1: true,
+		forT2: true,
+	},
+	{
+		id: 9,
+		feature: getT('AI Assistant', 'aiAssistant'),
+		forFree: false,
+		forIndividual: true,
+		forEssential: true,
+		forTeams: true,
+		forEnterprise: true,
+		forT1: false,
+		forT2: true,
+	},
+	{
+		id: 10,
+		feature: getT('Custom domain', 'customDomain'),
+		forFree: false,
+		forIndividual: false,
+		forEssential: true,
+		forTeams: true,
+		forEnterprise: true,
+		forT1: true,
+		forT2: true,
+	},
+	{
+		id: 11,
+		feature: getT('Custom support and help', 'customSupportAndHelp'),
+		forFree: false,
+		forIndividual: false,
+		forEssential: false,
+		forTeams: true,
+		forEnterprise: true,
+		forT1: false,
+		forT2: true,
+	},
+	{
+		id: 12,
+		feature: getT('Premium CDN', 'premiumCdn'),
+		forFree: false,
+		forIndividual: false,
+		forEssential: false,
+		forTeams: false,
+		forEnterprise: true,
+		forT1: null,
+		forT2: null,
+	},
+	{
+		id: 13,
+		feature: getT('SSO enabled', 'ssoEnabled'),
+		forFree: false,
+		forIndividual: false,
+		forEssential: false,
+		forTeams: false,
+		forEnterprise: true,
+		forT1: null,
+		forT2: null,
+	},
+	{
+		id: 14,
+		feature: getT('On-premise data', 'onPremiseData'),
+		forFree: false,
+		forIndividual: false,
+		forEssential: false,
+		forTeams: false,
+		forEnterprise: true,
+		forT1: null,
+		forT2: null,
+	},
+	{
+		id: 15,
+		feature: getT('Content and SEO audit', 'contentAndSeoAudit'),
+		forFree: false,
+		forIndividual: false,
+		forEssential: false,
+		forTeams: false,
+		forEnterprise: true,
+		forT1: null,
+		forT2: null,
+	},
+]

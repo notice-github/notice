@@ -1,0 +1,22 @@
+{
+	"name": "@notice-app/mongodb",
+	"private": true,
+	"main": "./dist/index.js",
+	"types": "./src",
+	"scripts": {
+		"build": "rm -rf dist && tsc --build"
+	},
+	"dependencies": {
+		"@notice-app/models": "workspace:*",
+		"mongodb": "5.7.0"
+	},
+	"peerDependencies": {
+		"typerestjs": "1.6.0"
+	},
+	"devDependencies": {
+		"@notice-app/tsconfig": "workspace:*",
+		"@types/node": "20.4.1",
+		"typerestjs": "1.6.0",
+		"typescript": "5.1.6"
+	}
+}

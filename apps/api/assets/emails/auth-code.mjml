@@ -1,0 +1,29 @@
+<mjml>
+	<mj-body background-color="#ffffff">
+		<mj-section>
+			<mj-column>
+				<mj-text font-size="25px" align="center">🔐 Notice Login</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section padding-bottom="10px">
+			<mj-column>
+				<mj-text font-size="18px">Here is your temporary login code:</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section background-color="#F5F7F9">
+			<mj-column>
+				<mj-text font-size="30px" align="center" letter-spacing="8px">{{ code }}</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section>
+			<mj-column>
+				<mj-text font-size="14px" align="center">If you didn't try to login, you can safely ignore this email.</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section background-color="#F5F7F9">
+			<mj-column>
+				<mj-text font-size="25px" align="center">Notice</mj-text>
+			</mj-column>
+		</mj-section>
+	</mj-body>
+</mjml>

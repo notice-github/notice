@@ -1,0 +1,18 @@
+id,name,free,individual,essential,teams,enterprise
+projects,Projects,1,5,10,25,custom
+collaborators,Collaborators,0,0,3,10,custom
+customization,Customization,on,on,on,on,on
+translation,Translation,off,on,on,on,on
+translation_langs,Translation Languages,0,1,5,all,all
+insights,Insights,off,on,on,on,on
+gs_indexation,Google Search Indexation,off,on,on,on,on
+hide_branding,Hide Notice Branding,off,on,on,on,on
+ai_assistant,AI Assistant,off,on,on,on,on
+custom_domain,Custom Domain (CNAME & A),off,off,on,on,on
+custom_code,"Custom Code (Head, CSS, JS)",off,off,on,on,on
+auto_translate,Auto Translate,off,off,on,on,on
+custom_support,Custom Support & Help,off,off,off,on,on
+premium_cdn,Premium CDN,off,off,off,off,on
+audits,Content & SEO Audits,off,off,off,off,on
+sso,SSO,off,off,off,off,on
+on_premise,On-Premise,off,off,off,off,on

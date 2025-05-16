@@ -1,0 +1,17 @@
+{
+	"name": "@notice-app/models",
+	"private": true,
+	"main": "./dist/index.js",
+	"types": "./src",
+	"scripts": {
+		"build": "rm -rf dist && tsc --build"
+	},
+	"dependencies": {
+		"typerestjs": "1.6.0"
+	},
+	"devDependencies": {
+		"@notice-app/tsconfig": "workspace:*",
+		"@types/node": "20.4.1",
+		"typescript": "5.1.6"
+	}
+}

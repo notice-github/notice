@@ -1,0 +1,9 @@
+{
+	"include": ["src"],
+	"extends": "@notice-app/tsconfig/server.json",
+	"compilerOptions": {
+		"module": "ES2020",
+		"moduleResolution": "bundler",
+		"outDir": "./dist"
+	}
+}

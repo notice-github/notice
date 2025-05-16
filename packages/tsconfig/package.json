@@ -1,0 +1,7 @@
+{
+	"name": "@notice-app/tsconfig",
+	"private": true,
+	"publishConfig": {
+		"access": "public"
+	}
+}

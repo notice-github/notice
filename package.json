@@ -1,0 +1,30 @@
+{
+	"name": "notice-app",
+	"version": "1.0.0",
+	"private": true,
+	"engines": {
+		"node": ">=18",
+		"pnpm": ">=8.5 <8.6"
+	},
+	"os": [
+		"darwin",
+		"linux"
+	],
+	"scripts": {
+		"setup": "$SHELL ./scripts/setup.sh",
+		"docker:up": "docker-compose up -d",
+		"docker:down": "docker-compose down",
+		"dev": "turbo run dev --concurrency 42",
+		"test": "turbo run test --concurrency 42",
+		"clean": "rm -rf node_modules apps/*/node_modules packages/*/node_modules",
+		"reinstall": "pnpm clean && pnpm install",
+		"upgrade": "pnpm --filter @notice-app/api... --filter @notice-app/client... --filter @notice-app/lighthouse... --filter @notice-app/renderer... upgrade",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\""
+	},
+	"devDependencies": {
+		"@turbo/gen": "^1.10.13",
+		"@types/node": "^20.6.0",
+		"prettier": "^3.0.3",
+		"turbo": "^1.10.13"
+	}
+}

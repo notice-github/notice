@@ -1,0 +1,25 @@
+<mjml>
+	<mj-body background-color="#ffffff">
+		<mj-section>
+			<mj-column>
+				<mj-text font-size="25px" align="center">🤝 Hello</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section padding-bottom="10px">
+			<mj-column>
+				<mj-text font-size="18px">Someone just invited you to collaborate to their project.</mj-text>
+        <mj-text font-size="18px">To get started, click in the link below and accept the invitation:</mj-text>
+			</mj-column>
+		</mj-section>
+    <mj-section padding-bottom="20px">
+			<mj-column>
+				<mj-button font-size="18px" href="{{ link }}?utm_source=brevo&utm_campaign=Invitation to collaborate&utm_medium=email">View Invitation</mj-button>
+			</mj-column>
+		</mj-section>
+		<mj-section background-color="#F5F7F9">
+			<mj-column>
+				<mj-text font-size="25px" align="center">Notice</mj-text>
+			</mj-column>
+		</mj-section>
+	</mj-body>
+</mjml>

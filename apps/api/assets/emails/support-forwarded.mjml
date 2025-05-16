@@ -1,0 +1,36 @@
+<mjml>
+	<mj-body background-color="#ffffff">
+		<mj-section>
+			<mj-column>
+				<mj-text font-size="25px" align="center">⚙️ Notice Support</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section background-color="#F5F7F9">
+			<mj-column>
+				<mj-text font-size="20px">
+					Subject:
+        </mj-text>
+        <mj-text font-size="16px">
+					{{ subject }}
+        </mj-text>
+        <mj-text font-size="20px">
+					Message:
+        </mj-text>
+        <mj-text font-size="16px">
+					{{ message }}
+        </mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section>
+			<mj-column>
+				<mj-text font-size="14px" align="center">Your message has been transmitted to the support, we'll come back to you soon.</mj-text>
+				<mj-text font-size="14px" align="center">Have a good day!</mj-text>
+			</mj-column>
+		</mj-section>
+		<mj-section background-color="#F5F7F9">
+			<mj-column>
+				<mj-text font-size="25px" align="center">Notice</mj-text>
+			</mj-column>
+		</mj-section>
+	</mj-body>
+</mjml>

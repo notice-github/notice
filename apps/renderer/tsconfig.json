@@ -1,0 +1,16 @@
+{
+	"include": ["src"],
+	"extends": "@notice-app/tsconfig/server.json",
+	"compilerOptions": {
+		"target": "ES2022",
+		"outDir": "./dist",
+
+		"allowJs": true,
+		"strict": false,
+
+		"baseUrl": "./src",
+		"paths": {
+			"@root/*": ["./*"]
+		}
+	}
+}

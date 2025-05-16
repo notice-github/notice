@@ -1,0 +1,7 @@
+{
+	"include": ["src"],
+	"extends": "@notice-app/tsconfig/server.json",
+	"compilerOptions": {
+		"outDir": "./dist"
+	}
+}

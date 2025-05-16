@@ -1,0 +1,53 @@
+{
+	"name": "@notice-app/api",
+	"description": "Notice App API",
+	"version": "1.1.0",
+	"private": true,
+	"main": "dist/index.js",
+	"scripts": {
+		"dev": "tsup",
+		"test": "tsc --noEmit",
+		"build": "rm -rf dist && tsc --build",
+		"start": "node ."
+	},
+	"dependencies": {
+		"@aws-sdk/client-sesv2": "3.478.0",
+		"@google-cloud/translate": "7.2.2",
+		"@notice-app/models": "workspace:*",
+		"@notice-app/mongodb": "workspace:*",
+		"@notice-app/openai": "workspace:*",
+		"@notice-app/postgres": "workspace:*",
+		"@notice-app/tools": "workspace:*",
+		"axios": "1.4.0",
+		"cron": "^4.3.0",
+		"extract-colors": "^4.0.2",
+		"handlebars": "4.7.7",
+		"htmlparser2": "9.0.0",
+		"jimp": "^0.22.10",
+		"jsonwebtoken": "9.0.1",
+		"lodash": "4.17.21",
+		"marked": "5.1.1",
+		"mime-types": "2.1.35",
+		"mjml": "4.14.1",
+		"papaparse": "5.4.1",
+		"puppeteer-core": "22.0.0",
+		"seedrandom": "3.0.5",
+		"simple-oauth2": "5.0.0",
+		"stripe": "12.13.0",
+		"typerestjs": "1.6.0"
+	},
+	"devDependencies": {
+		"@notice-app/tsconfig": "workspace:*",
+		"@types/jsonwebtoken": "9.0.2",
+		"@types/lodash": "4.14.195",
+		"@types/marked": "5.0.1",
+		"@types/mime-types": "2.1.1",
+		"@types/mjml": "4.7.1",
+		"@types/node": "20.4.1",
+		"@types/papaparse": "5.3.9",
+		"@types/seedrandom": "3.0.6",
+		"@types/simple-oauth2": "5.0.4",
+		"tsup": "7.1.0",
+		"typescript": "5.1.6"
+	}
+}
