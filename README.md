@@ -1,6 +1,6 @@
-# Notice - Self-Hosted
+# Notice
 
-**Your self-hosted platform for creating blogs, docs, portfolios, and more.**
+**Your platform for creating blogs, docs, portfolios, and more.**
 
 Notice is a versatile content creation and publishing platform, now available for you to self-host. Take full control of your content and infrastructure. This monorepo contains everything you need to get started.
 
