@@ -60,10 +60,3 @@ For testing monetization features:
 Notice is distributed under a license designed to protect project IP while allowing self-hosting and community use (inspired by fair-code principles).
 
 ➡️ Please see the full `LICENSE` file in this repository for complete terms.
-
-## 💬 Support & Community
-
-*   **GitHub Issues:** For bug reports, feature requests, and questions. (Replace with your actual repo link)
-
-We encourage a respectful and collaborative community!
-
